@@ -1,0 +1,72 @@
+/* Lioden den theme — images and colors supplied by the player. */
+
+/* Page background */
+body {
+  background: #292530 url("https://i.pinimg.com/1200x/25/e9/7d/25e97dce2d4605eb358905b37c403454.jpg") center center / cover fixed no-repeat !important;
+  color: #29212c;
+}
+
+/* Replace the Lioden logo while keeping its link clickable. */
+.container.main .navbar-header > a > img[src$="logo-full-2.png"] {
+  content: url("https://lewislauren925117-sys.github.io/lioden-CSS/lioden-custom-logo.png");
+  display: block;
+  width: 192px;
+  height: 120px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* #df80ff at 50% opacity */
+.navbar, .navbar-default {
+  background: rgba(223, 128, 255, 0.5) !important;
+  border-color: rgba(96, 47, 105, 0.5) !important;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:visited {
+  color: #281629 !important;
+  text-shadow: none !important;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background: rgba(255, 255, 255, 0.35) !important;
+  color: #281629 !important;
+}
+
+/* #669999 at 50% opacity */
+.sidebar {
+  background: rgba(102, 153, 153, 0.5) !important;
+  color: #162c2c !important;
+}
+
+/* #79d2a6 at 55% opacity for the large main box. */
+.container.main {
+  background: rgba(121, 210, 166, 0.55) !important;
+}
+
+/* Keep the main content clear so its color is set by the outer box. */
+.col-md-9 {
+  background: transparent !important;
+  color: #29212c !important;
+}
+.sidebar .panel {
+  background: rgba(255, 250, 255, 0.90) !important;
+  color: #29212c !important;
+}
+.sidebar .panel {
+  border-color: rgba(102, 153, 153, 0.5) !important;
+}
+
+/* #cc66cc at 50% opacity */
+.table .top, .table .bottom, .table th {
+  background: rgba(204, 102, 204, 0.5) !important;
+  color: #281629 !important;
+}
+
+@media (max-width: 600px) {
+  body { background-attachment: scroll !important; }
+  .container.main .navbar-header > a > img[src$="logo-full-2.png"] {
+    max-width: 40vw;
+    height: auto;
+    aspect-ratio: 8 / 5;
+  }
+}
